@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Technical Documentation of Shell Commands</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <header>Basics of LINUX Commands</header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#pwd">pwd</a></li>
+                <li><a class="nav-link" href="#ls">ls</a></li>
+                <li><a class="nav-link" href="#cd">cd</a></li>
+                <li><a class="nav-link" href="#mkdir">mkdir</a></li>
+                <li><a class="nav-link" href="#touch">touch</a></li>
+                <li><a class="nav-link" href="#ln">ln</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        Linux is a free and open-source operating system that was created by Linus Torvalds in 1991. It is based on the Unix operating system and is used on a wide range of devices, including servers, desktops, laptops, and mobile phones. One of the main features
+                        of Linux is its flexibility and customization, as users can choose from a variety of different distributions (versions) and can also modify the source code to suit their specific needs. Linux is known for its stability, security,
+                        and performance, making it a popular choice for many businesses and organizations. It is also widely used in the development of software and applications, as it provides access to a wide range of programming languages and tools.
+                    </p>
+
+                    <p>Now, What is a Shell?</p>
+
+                    <p>
+                        A shell is a command-line interface for interacting with an operating system. It allows users to enter commands, which the shell then executes and returns the output. The shell is an important component of an operating system, as it provides a way for
+                        users to interact with the system and execute commands to perform various tasks. There are many different types of shells available, each with their own set of features and capabilities. Some common shells include the Bourne shell
+                        (sh), the C shell (csh), and the Bourne-Again shell (bash). Bash is the most widely used shell on Linux and macOS systems, and it is also available on Windows through the Windows Subsystem for Linux.
+                    </p>
+                    <p>Let's see some of the most used commands in LINUX.</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="pwd">
+                <header>pwd</header>
+                <article>
+                    <p>
+                        The pwd command stands for "print working directory". It is used to display the current working directory (i.e., the directory that you are currently in) in the terminal.
+                    </p>
+                    <p>Here is an example of how to use the pwd command:</p>
+                    <code>
+              <div class="command">pwd</div>
+              <div class="output">/home/user/documents</div>
+            </code>
+                    <p>
+                        In this example, the output of the pwd command is /home/user/documents, which indicates that the current working directory is the "documents" directory located in the "user" directory in the root directory (i.e., /).
+                    </p>
+                    <p>
+                        You can use the pwd command at any time to see the full path of the current working directory. This can be useful when you are navigating through different directories and want to know exactly where you are in the file system.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="ls">
+                <header>ls</header>
+                <article>
+                    <p>
+                        The ls command is used to list the files and directories in a directory. By default, it will show the names of the files and directories in the current working directory.
+                    </p>
+                    <p>Here is an example of how to use the ls command:</p>
+                    <code>
+              <div class="command">ls</div>
+              <div class="output">file1.txt file2.pdf directory1/</div>
+            </code>
+                    <p>
+                        In this example, the ls command lists three items in the current directory: file1.txt, file2.pdf, and directory1/. The / after directory1 indicates that it is a directory, rather than a file.
+                    </p>
+                    <p>
+                        You can use various options with the ls command to modify its behavior. For example, you can use the -l option to display the files and directories in a long format, which includes additional information such as the file size and permissions. You can
+                        also use the -a option to show hidden files (i.e., files that are normally not displayed because their names start with a dot).
+                    </p>
+                    <p>
+                        Here is an example of using the ls command with the -l and -a options:
+                    </p>
+                    <code>
+              <div class="command">ls -la</div>
+              <div class="output">
+                total 16
+                <table>
+                  <tr>
+                    <td>drwxrwxr-x</td>
+                    <td>2</td>
+                    <td>user</td>
+                    <td>user</td>
+                    <td>4096</td>
+                    <td>Jan 7 16:22</td>
+                    <td>.</td>
+                  </tr>
+                  <tr>
+                    <td>drwxrwxr-x</td>
+                    <td>18</td>
+                    <td>user</td>
+                    <td>user</td>
+                    <td>4096</td>
+                    <td>Jan 7 16:22</td>
+                    <td>..</td>
+                  </tr>
+                  <tr>
+                    <td>-rw-rw-r--</td>
+                    <td>1</td>
+                    <td>user</td>
+                    <td>user</td>
+                    <td>10</td>
+                    <td>Jan 7 16:22</td>
+                    <td>.hidden_file</td>
+                  </tr>
+                  <tr>
+                    <td>-rw-rw-r--</td>
+                    <td>1</td>
+                    <td>user</td>
+                    <td>user</td>
+                    <td>34</td>
+                    <td>Jan 7 16:22</td>
+                    <td>file1.txt</td>
+                  </tr>
+                  <tr>
+                    <td>-rw-rw-r--</td>
+                    <td>1</td>
+                    <td>user</td>
+                    <td>user</td>
+                    <td>114</td>
+                    <td>Jan 7 16:22</td>
+                    <td>file2.pdf</td>
+                  </tr>
+                  <tr>
+                    <td>drwxrwxr-x</td>
+                    <td>2</td>
+                    <td>user</td>
+                    <td>user</td>
+                    <td>4096</td>
+                    <td>Jan 7 16:22</td>
+                    <td>directory1/</td>
+                  </tr>
+                </table>
+              </div>
+            </code>
+                    <p>
+                        In this example, the ls command lists all files and directories in the current directory, including hidden files. The long format output includes from left to right:
+                        <ul>
+                            <li>the file permissions (and if your system supports ACLs, you get an ACL flag as well)</li>
+                            <li>the number of links to that file</li>
+                            <li>the owner of the file</li>
+                            <li>the group of the file</li>
+                            <li>the file size in bytes</li>
+                            <li>the file modified datetime</li>
+                            <li>the file name</li>
+                        </ul>
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="cd">
+                <header>cd</header>
+                <article>
+                    <p>
+                        The cd command stands for "change directory". It is used to change the current working directory in the terminal.
+                    </p>
+                    <p>Here is an example of how to use the cd command:</p>
+                    <code>
+              <div class="command">cd /home/user/documents</div>
+            </code>
+                    <p>
+                        In this example, the cd command changes the current working directory to the "documents" directory located in the "user" directory in the root directory (i.e., /).
+                    </p>
+                    <p>
+                        You can also use the cd command to navigate to directories relative to the current working directory. For example, you can use cd .. to move up one directory level, or you can use cd directory1 to move into a subdirectory called "directory1".
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="mkdir">
+                <header>mkdir</header>
+                <article>
+                    <p>
+                        The mkdir command stands for "make directory". It is used to create a new directory in the file system.
+                    </p>
+                    <p>Here is an example of how to use the `mkdir` command:</p>
+                    <code>
+              <div class="command">mkdir new_directory</div>
+            </code>
+                    <p>
+                        In this example, the mkdir command creates a new directory called "new_directory" in the current working directory.
+                    </p>
+                    <p>
+                        You can also use the mkdir command to create multiple directories at once by specifying a list of directory names separated by spaces. For example:
+                    </p>
+                    <code>
+              <div class="command">mkdir dir1 dir2 dir3</div>
+            </code>
+                    <p>
+                        You can use the -p option to create intermediate directories that do not yet exist. For example:
+                    </p>
+                    <code>
+              <div class="command">mkdir -p path/to/new_directory</div>
+            </code>
+                    <p>
+                        In this example, the mkdir command will create the "new_directory" directory inside the "path/to" directory, creating both directories if they do not already exist.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="touch">
+                <header>touch</header>
+                <article>
+                    <p>
+                        The `touch` command is used to create a new file or update the timestamp of an existing file.
+                    </p>
+
+                    <p>Here is an example of how to use the `touch` command:</p>
+                    <code>
+                        <div class="command">touch newfile.txt</div>
+                    </code>
+                    <p>
+                        In this example, the touch command creates a new, empty file called "new_file.txt" in the current working directory.
+                    </p>
+                    <p>
+                        You can also use the touch command to update the timestamp of an existing file. For example:
+                    </p>
+                    <code>
+                        <div class="command">touch existing_file.txt</div>
+                    </code>
+                    <p>
+                        In this example, the touch command updates the timestamp of the "existing_file.txt" file to the current date and time.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="ln">
+                <header>ln</header>
+                <article>
+                    <p>
+                        The ln command is used to create links between files in a file system. There are two types of links: soft links (also called symbolic links) and hard links.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                A soft link (symbolic link) is a special type of file that contains a reference to another file or directory. When the soft link is accessed, it behaves as if it were the file or directory that it is linked to.
+                            </p>
+                            <p>
+                                Here is an example of how to create a soft link using the ln command:
+                            </p>
+                            <code>
+                                <div class="command">
+                                    ln -s /path/to/original_file.txt soft_link.txt
+                                </div>
+                            </code>
+                            <p>
+                                In this example, the ln command creates a soft link called "soft_link.txt" that points to the file "original_file.txt" located at /path/to/original_file.txt.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                A hard link is a direct link to the physical data of a file, rather than a reference to the file itself. A hard link behaves just like the original file, and changes to the hard link are reflected in the original file and vice versa.
+                            </p>
+                            <p>
+                                Here is an example of how to create a hard link using the ln command:
+                            </p>
+                            <code>
+                                <div class="command">
+                                    ln /path/to/original_file.txt hard_link.txt
+                                </div>
+                            </code>
+                            <p>
+                                In this example, the ln command creates a hard link called "hard_link.txt" that points to the file "original_file.txt" located at /path/to/original_file.txt.
+                            </p>
+                        </li>
+                    </ul>
+                    <p>
+                        The ln command is a useful tool for creating links between files in a file system. Soft links allow you to create a reference to a file or directory without taking up additional space, while hard links allow you to access the same data from multiple locations
+                        without taking up additional space.
+                    </p>
+                </article>
+            </section>
+            <footer>
+                <p>This article is written with the help of chatGPT</p>
+            </footer>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
