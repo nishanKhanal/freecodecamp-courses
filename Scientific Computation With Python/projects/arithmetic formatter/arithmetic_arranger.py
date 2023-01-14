@@ -1,10 +1,6 @@
 import re
 
 class Problem:
-  operator = ''
-  operaand_1 = 0
-  operaand_1 = 0
-  max_width = 0
 
   def __init__(self, problem_string):
 
@@ -14,7 +10,7 @@ class Problem:
 
     self.operator = match.groups()[0]
 
-    operand_list = re.split(r'\s[+-]\s', problem_string)
+    operand_list = problem_string.split(f" {self.operator} ")
     self.operand_1, self.operand_2 = operand_list[0], operand_list[1]
 
     if (len(self.operand_1) > 4 or len(self.operand_2) > 4):
