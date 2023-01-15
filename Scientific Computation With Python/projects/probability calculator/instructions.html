@@ -1,0 +1,823 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="generator" content="LibreOffice 6.4.7.2 (Linux)" />
+    <meta name="created" content="2023-01-15T20:07:58.907809587" />
+    <meta name="changed" content="2023-01-15T20:08:22.012652110" />
+    <style type="text/css">
+        @page {
+            size: 8.27in 11.69in;
+            margin: 0.79in
+        }
+        
+        p {
+            margin-bottom: 0.1in;
+            line-height: 115%;
+            background: transparent
+        }
+        
+        h1 {
+            margin-bottom: 0.08in;
+            background: transparent;
+            page-break-after: avoid
+        }
+        
+        h1.western {
+            font-family: "Liberation Serif", serif;
+            font-size: 24pt;
+            font-weight: bold
+        }
+        
+        h1.cjk {
+            font-family: "Noto Serif CJK SC";
+            font-size: 24pt;
+            font-weight: bold
+        }
+        
+        h1.ctl {
+            font-family: "Lohit Devanagari";
+            font-size: 24pt;
+            font-weight: bold
+        }
+        
+        pre {
+            background: transparent
+        }
+        
+        pre.western {
+            font-family: "Liberation Mono", monospace;
+            font-size: 10pt
+        }
+        
+        pre.cjk {
+            font-family: "Noto Sans Mono CJK SC", monospace;
+            font-size: 10pt
+        }
+        
+        pre.ctl {
+            font-family: "Liberation Mono", monospace;
+            font-size: 10pt
+        }
+        
+        h2 {
+            margin-top: 0.14in;
+            margin-bottom: 0.08in;
+            background: transparent;
+            page-break-after: avoid
+        }
+        
+        h2.western {
+            font-family: "Liberation Serif", serif;
+            font-size: 18pt;
+            font-weight: bold
+        }
+        
+        h2.cjk {
+            font-family: "Noto Serif CJK SC";
+            font-size: 18pt;
+            font-weight: bold
+        }
+        
+        h2.ctl {
+            font-family: "Lohit Devanagari";
+            font-size: 18pt;
+            font-weight: bold
+        }
+        
+        a:link {
+            color: #000080;
+            so-language: zxx;
+            text-decoration: underline
+        }
+        
+        code.western {
+            font-family: "Liberation Mono", monospace
+        }
+        
+        code.cjk {
+            font-family: "Noto Sans Mono CJK SC", monospace
+        }
+        
+        code.ctl {
+            font-family: "Liberation Mono", monospace
+        }
+    </style>
+</head>
+
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr">
+    <h1 class="western" align="center" style="margin-top: 0in; margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 142%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Hack-ZeroSlash, monospace">
+                <font size="4" style="font-size: 13pt"><b>Probability
+Calculator</b></font>
+            </font>
+        </font>
+    </h1>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">You
+will be&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><a href="https://replit.com/github/freeCodeCamp/boilerplate-probability-calculator" target="_blank"><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><u><span style="font-weight: normal"><span style="background: transparent">working
+on this project with our Replit starter code</span></span></u></span></span></font></font></font></span></a><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+    </p>
+    <ul>
+        <li>
+            <p style="margin-bottom: 0.13in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+                <font color="#1b1b32">
+                    <font face="Lato, sans-serif">
+                        <font size="4" style="font-size: 13pt">Start by importing the project on Replit.</font>
+                    </font>
+                </font>
+            </p>
+            <li>
+                <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Next,
+	you will see a&nbsp;</span></span>
+                    </span>
+                    </font>
+                    </font>
+                    </font>
+                    </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.replit</span></span>
+                    </span>
+                    </span>
+                    </font>
+                    </font>
+                    </font>
+                    </span>
+                    </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;window.</span></span>
+                    </span>
+                    </font>
+                    </font>
+                    </font>
+                    </span>
+                </p>
+                <li>
+                    <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Select&nbsp;</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Use
+	run command</span></span>
+                        </span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and
+	click the&nbsp;</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Done</span></span>
+                        </span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;button.</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                    </p>
+    </ul>
+    <hr/>
+
+    <p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Lato, sans-serif">
+                <font size="4" style="font-size: 13pt">Suppose there is a hat containing 5 blue balls, 4 red balls, and 2 green balls. What is the probability that a random draw of 4 balls will contain at least 1 red ball and 2 green balls? While it would be possible to calculate the probability
+                    using advanced mathematics, an easier way is to write a program to perform a large number of experiments to estimate an approximate probability.</font>
+            </font>
+        </font>
+    </p>
+    <p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Lato, sans-serif">
+                <font size="4" style="font-size: 13pt">For this project, you will write a program to determine the approximate probability of drawing certain balls randomly from a hat.</font>
+            </font>
+        </font>
+    </p>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">First,
+create a&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Hat</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;class
+in&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">prob_calculator.py</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+The class should take a variable number of arguments that specify the
+number of balls of each color that are in the hat. For example, a
+class object could be created in any of these ways:</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+    </p>
+    <pre class="western" style="border: none; padding: 0in; line-height: 150%; text-align: left; orphans: 2; widows: 2; background: #f5f2f0"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">hat1 </span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> Hat</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">yellow</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">3</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> blue</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">2</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> green</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">6</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">hat2 </span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> Hat</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">red</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">5</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> orange</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">4</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">hat3 </span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> Hat</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">red</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">5</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> orange</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">4</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> black</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">1</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> blue</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">0</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> pink</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">2</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> striped</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">9</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code></pre>
+    <p
+        style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">A
+hat will always be created with at least one ball. The arguments
+passed into the hat object upon creation should be converted to
+a&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">contents</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;instance
+variable.&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">contents</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;should
+be a list of strings containing one item for each ball in the hat.
+Each item in the list should be a color name representing a single
+ball of that color. For example, if your hat is&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">{&quot;red&quot;:
+2, &quot;blue&quot;: 1}</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">,&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">contents</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;should
+be&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">[&quot;red&quot;,
+&quot;red&quot;, &quot;blue&quot;]</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </p>
+        <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+            <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">The&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Hat</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;class
+should have a&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">draw</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;method
+that accepts an argument indicating the number of balls to draw from
+the hat. This method should remove balls at random from&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">contents</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and
+return those balls as a list of strings. The balls should not go back
+into the hat during the draw, similar to an urn experiment without
+replacement. If the number of balls to draw exceeds the available
+quantity, return all the balls.</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+        </p>
+        <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+            <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Next,
+create an&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">experiment</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;function
+in&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">prob_calculator.py</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;(not
+inside the&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Hat</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;class).
+This function should accept the following arguments:</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+        </p>
+        <ul>
+            <li>
+                <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">hat</span></span>
+                    </span>
+                    </span>
+                    </font>
+                    </font>
+                    </font>
+                    </span>
+                    </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">:
+	A hat object containing balls that should be copied inside the
+	function.</span></span>
+                    </span>
+                    </font>
+                    </font>
+                    </font>
+                    </span>
+                </p>
+                <li>
+                    <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">expected_balls</span></span>
+                        </span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">:
+	An object indicating the exact group of balls to attempt to draw
+	from the hat for the experiment. For example, to determine the
+	probability of drawing 2 blue balls and 1 red ball from the hat,
+	set&nbsp;</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">expected_balls</span></span>
+                        </span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;to&nbsp;</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">{&quot;blue&quot;:2,
+	&quot;red&quot;:1}</span></span>
+                        </span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                    </p>
+                    <li>
+                        <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">num_balls_drawn</span></span>
+                            </span>
+                            </span>
+                            </font>
+                            </font>
+                            </font>
+                            </span>
+                            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">:
+	The number of balls to draw out of the hat in each experiment.</span></span>
+                            </span>
+                            </font>
+                            </font>
+                            </font>
+                            </span>
+                        </p>
+                        <li>
+                            <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">num_experiments</span></span>
+                                </span>
+                                </span>
+                                </font>
+                                </font>
+                                </font>
+                                </span>
+                                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">:
+	The number of experiments to perform. (The more experiments
+	performed, the more accurate the approximate probability will be.)</span></span>
+                                </span>
+                                </font>
+                                </font>
+                                </font>
+                                </span>
+                            </p>
+        </ul>
+        <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+            <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">The&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">experiment</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;function
+should return a probability.</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+        </p>
+        <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+            <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">For
+example, if you want to determine the probability of getting at least
+two red balls and one green ball when you draw five balls from a hat
+containing six black, four red, and three green. To do this, you will
+perform&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">N</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;experiments,
+count how many times&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">M</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;you
+get at least two red balls and one green ball, and estimate the
+probability as&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">M/N</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+Each experiment consists of starting with a hat containing the
+specified balls, drawing several balls, and checking if you got the
+balls you were attempting to draw.</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+        </p>
+        <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+            <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Here
+is how you would call the&nbsp;</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">experiment</span></span>
+            </span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;function
+based on the example above with 2000 experiments:</span></span>
+            </span>
+            </font>
+            </font>
+            </font>
+            </span>
+        </p>
+        <pre class="western" style="border: none; padding: 0in; line-height: 150%; text-align: left; orphans: 2; widows: 2; background: #f5f2f0"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">hat </span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> Hat</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">black</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">6</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> red</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">4</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> green</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">3</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">probability </span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> experiment</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">hat</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">hat</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><code class="western">                  </span></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">expected_balls</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">={</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#008040"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">&quot;red&quot;</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">:</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">2</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#008040"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">&quot;green&quot;</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">:</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">1</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">},</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><code class="western">                  </span></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">num_balls_drawn</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">5</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><code class="western">                  </span></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">num_experiments</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">2000</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code></pre>
+        <p
+            style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%; orphans: 2; widows: 2">
+            <font color="#1b1b32">
+                <font face="Lato, sans-serif">
+                    <font size="4" style="font-size: 13pt">Since this is based on random draws, the probability will be slightly different each time the code is run.</font>
+                </font>
+            </font>
+            </p>
+            <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+                <em><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Hint:
+Consider using the modules that are already imported at the top
+of&nbsp;</span></span></span></font></font></font></span></em><span style="display: inline-block; border: none; padding: 0in"><code class="western"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><em>prob_calculator.py</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code>
+                </em><em><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+Do not initialize random seed within&nbsp;</span></span></span></font></font></font></span></em><span style="display: inline-block; border: none; padding: 0in"><code class="western"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><em>prob_calculator.py</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code>
+                </em><em><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.</span></span></span></font></font></font></span></em></p>
+            <h2 class="western" style="margin-top: 0in; margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+                <font color="#1b1b32">
+                    <font face="Hack-ZeroSlash, monospace">
+                        <font size="4" style="font-size: 13pt"><b>Development</b></font>
+                    </font>
+                </font>
+            </h2>
+            <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+                <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Write
+your code in&nbsp;</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">prob_calculator.py</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+For development, you can use&nbsp;</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">main.py</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;to
+test your code. Click the &quot;run&quot; button and&nbsp;</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">main.py</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;will
+run.</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+            </p>
+            <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+                <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">The
+boilerplate includes&nbsp;</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">import</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;statements
+for the&nbsp;</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">copy</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and&nbsp;</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">random</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;modules.
+Consider using those in your project.</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+            </p>
+            <h2 class="western" style="margin-top: 0in; margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+                <font color="#1b1b32">
+                    <font face="Hack-ZeroSlash, monospace">
+                        <font size="4" style="font-size: 13pt"><b>Testing</b></font>
+                    </font>
+                </font>
+            </h2>
+            <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+                <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">The
+unit tests for this project are in&nbsp;</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">test_module.py</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+We imported the tests from&nbsp;</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">test_module.py</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;to&nbsp;</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">main.py</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;for
+your convenience. The tests will run automatically whenever you hit
+the &quot;run&quot; button.</span></span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+            </p>
+            <p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+            </p>
+</body>
+
+</html>
