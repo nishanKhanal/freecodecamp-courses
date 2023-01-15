@@ -1,0 +1,735 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="generator" content="LibreOffice 6.4.7.2 (Linux)" />
+    <meta name="created" content="2023-01-15T17:53:31.738790352" />
+    <meta name="changed" content="2023-01-15T17:54:03.569687013" />
+    <style type="text/css">
+        @page {
+            size: 8.27in 11.69in;
+            margin: 0.79in
+        }
+        
+        p {
+            margin-bottom: 0.1in;
+            line-height: 115%;
+            background: transparent
+        }
+        
+        h1 {
+            margin-bottom: 0.08in;
+            background: transparent;
+            page-break-after: avoid
+        }
+        
+        h1.western {
+            font-family: "Liberation Serif", serif;
+            font-size: 24pt;
+            font-weight: bold
+        }
+        
+        h1.cjk {
+            font-family: "Noto Serif CJK SC";
+            font-size: 24pt;
+            font-weight: bold
+        }
+        
+        h1.ctl {
+            font-family: "Lohit Devanagari";
+            font-size: 24pt;
+            font-weight: bold
+        }
+        
+        h2 {
+            margin-top: 0.14in;
+            margin-bottom: 0.08in;
+            background: transparent;
+            page-break-after: avoid
+        }
+        
+        h2.western {
+            font-family: "Liberation Serif", serif;
+            font-size: 18pt;
+            font-weight: bold
+        }
+        
+        h2.cjk {
+            font-family: "Noto Serif CJK SC";
+            font-size: 18pt;
+            font-weight: bold
+        }
+        
+        h2.ctl {
+            font-family: "Lohit Devanagari";
+            font-size: 18pt;
+            font-weight: bold
+        }
+        
+        pre {
+            background: transparent
+        }
+        
+        pre.western {
+            font-family: "Liberation Mono", monospace;
+            font-size: 10pt
+        }
+        
+        pre.cjk {
+            font-family: "Noto Sans Mono CJK SC", monospace;
+            font-size: 10pt
+        }
+        
+        pre.ctl {
+            font-family: "Liberation Mono", monospace;
+            font-size: 10pt
+        }
+        
+        a:link {
+            color: #000080;
+            so-language: zxx;
+            text-decoration: underline
+        }
+        
+        code.western {
+            font-family: "Liberation Mono", monospace
+        }
+        
+        code.cjk {
+            font-family: "Noto Sans Mono CJK SC", monospace
+        }
+        
+        code.ctl {
+            font-family: "Liberation Mono", monospace
+        }
+    </style>
+</head>
+
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr">
+    <h1 class="western" align="center" style="margin-top: 0in; margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 142%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Hack-ZeroSlash, monospace">
+                <font size="4" style="font-size: 13pt"><b>Polygon
+Area Calculator</b></font>
+            </font>
+        </font>
+    </h1>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">You
+will be&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><a href="https://replit.com/github/freeCodeCamp/boilerplate-polygon-area-calculator" target="_blank"><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><u><span style="font-weight: normal"><span style="background: transparent">working
+on this project with our Replit starter code</span></span></u></span></span></font></font></font></span></a><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+    </p>
+    <ul>
+        <li>
+            <p style="margin-bottom: 0.13in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+                <font color="#1b1b32">
+                    <font face="Lato, sans-serif">
+                        <font size="4" style="font-size: 13pt">Start by importing the project on Replit.</font>
+                    </font>
+                </font>
+            </p>
+            <li>
+                <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Next,
+	you will see a&nbsp;</span></span>
+                    </span>
+                    </font>
+                    </font>
+                    </font>
+                    </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.replit</span></span>
+                    </span>
+                    </span>
+                    </font>
+                    </font>
+                    </font>
+                    </span>
+                    </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;window.</span></span>
+                    </span>
+                    </font>
+                    </font>
+                    </font>
+                    </span>
+                </p>
+                <li>
+                    <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Select&nbsp;</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Use
+	run command</span></span>
+                        </span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and
+	click the&nbsp;</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Done</span></span>
+                        </span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;button.</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                    </p>
+    </ul>
+    <hr/>
+
+    <p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Lato, sans-serif">
+                <font size="4" style="font-size: 13pt">In this project you will use object oriented programming to create a Rectangle class and a Square class. The Square class should be a subclass of Rectangle and inherit methods and attributes.</font>
+            </font>
+        </font>
+    </p>
+    <h2 class="western" style="margin-top: 0in; margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Hack-ZeroSlash, monospace">
+                <font size="4" style="font-size: 13pt"><b>Rectangle
+class</b></font>
+            </font>
+        </font>
+    </h2>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">When
+a Rectangle object is created, it should be initialized
+with&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">width</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">height</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;attributes.
+The class should also contain the following methods:</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+    </p>
+    <ul>
+        <li>
+            <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">set_width</span></span>
+                </span>
+                </span>
+                </font>
+                </font>
+                </font>
+                </span>
+                </code>
+            </p>
+            <li>
+                <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">set_height</span></span>
+                    </span>
+                    </span>
+                    </font>
+                    </font>
+                    </font>
+                    </span>
+                    </code>
+                </p>
+                <li>
+                    <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_area</span></span>
+                        </span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">:
+	Returns area (</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">width
+	* height</span></span>
+                        </span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">)</span></span>
+                        </span>
+                        </font>
+                        </font>
+                        </font>
+                        </span>
+                    </p>
+                    <li>
+                        <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_perimeter</span></span>
+                            </span>
+                            </span>
+                            </font>
+                            </font>
+                            </font>
+                            </span>
+                            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">:
+	Returns perimeter (</span></span>
+                            </span>
+                            </font>
+                            </font>
+                            </font>
+                            </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">2
+	* width + 2 * height</span></span>
+                            </span>
+                            </span>
+                            </font>
+                            </font>
+                            </font>
+                            </span>
+                            </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">)</span></span>
+                            </span>
+                            </font>
+                            </font>
+                            </font>
+                            </span>
+                        </p>
+                        <li>
+                            <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_diagonal</span></span>
+                                </span>
+                                </span>
+                                </font>
+                                </font>
+                                </font>
+                                </span>
+                                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">:
+	Returns diagonal (</span></span>
+                                </span>
+                                </font>
+                                </font>
+                                </font>
+                                </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(width
+	** 2 + height ** 2) ** .5</span></span>
+                                </span>
+                                </span>
+                                </font>
+                                </font>
+                                </font>
+                                </span>
+                                </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">)</span></span>
+                                </span>
+                                </font>
+                                </font>
+                                </font>
+                                </span>
+                            </p>
+                            <li>
+                                <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_picture</span></span>
+                                    </span>
+                                    </span>
+                                    </font>
+                                    </font>
+                                    </font>
+                                    </span>
+                                    </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">:
+	Returns a string that represents the shape using lines of &quot;*&quot;.
+	The number of lines should be equal to the height and the number of
+	&quot;*&quot; in each line should be equal to the width. There
+	should be a new line (</span></span>
+                                    </span>
+                                    </font>
+                                    </font>
+                                    </font>
+                                    </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">\n</span></span>
+                                    </span>
+                                    </span>
+                                    </font>
+                                    </font>
+                                    </font>
+                                    </span>
+                                    </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">)
+	at the end of each line. If the width or height is larger than 50,
+	this should return the string: &quot;Too big for picture.&quot;.</span></span>
+                                    </span>
+                                    </font>
+                                    </font>
+                                    </font>
+                                    </span>
+                                </p>
+                                <li>
+                                    <p style="margin-bottom: 0.13in; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_amount_inside</span></span>
+                                        </span>
+                                        </span>
+                                        </font>
+                                        </font>
+                                        </font>
+                                        </span>
+                                        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">:
+	Takes another shape (square or rectangle) as an argument. Returns
+	the number of times the passed in shape could fit inside the shape
+	(with no rotations). For instance, a rectangle with a width of 4 and
+	a height of 8 could fit in two squares with sides of 4.</span></span>
+                                        </span>
+                                        </font>
+                                        </font>
+                                        </font>
+                                        </span>
+                                    </p>
+    </ul>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Additionally,
+if an instance of a Rectangle is represented as a string, it should
+look like:&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Rectangle(width=5,
+height=10)</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code>
+    </p>
+    <h2 class="western" style="margin-top: 0in; margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Hack-ZeroSlash, monospace">
+                <font size="4" style="font-size: 13pt"><b>Square
+class</b></font>
+            </font>
+        </font>
+    </h2>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">The
+Square class should be a subclass of Rectangle. When a Square object
+is created, a single side length is passed in. The&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">__init__</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;method
+should store the side length in both the&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">width</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">height</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;attributes
+from the Rectangle class.</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+    </p>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">The
+Square class should be able to access the Rectangle class methods but
+should also contain a&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">set_side</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;method.
+If an instance of a Square is represented as a string, it should look
+like:&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Square(side=9)</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code>
+    </p>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Additionally,
+the&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">set_width</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;and&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">set_height</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;methods
+on the Square class should set both the width and height.</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+    </p>
+    <h2 class="western" style="margin-top: 0in; margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Hack-ZeroSlash, monospace">
+                <font size="4" style="font-size: 13pt"><b>Usage
+example</b></font>
+            </font>
+        </font>
+    </h2>
+    <pre class="western" style="border: none; padding: 0in; line-height: 150%; text-align: left; orphans: 2; widows: 2; background: #f5f2f0"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">rect </span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> shape_calculator</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Rectangle</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">10</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">,</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> </span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">5</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#2574a9"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">print</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">rect</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_area</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">())</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">rect</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">set_height</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">3</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#2574a9"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">print</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">rect</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_perimeter</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">())</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#2574a9"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">print</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">rect</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#2574a9"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">print</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">rect</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_picture</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">())</span></span></span></span></font></font></font></span></code>
+
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">sq </span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> shape_calculator</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Square</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">9</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#2574a9"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">print</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">sq</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_area</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">())</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">sq</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">set_side</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">4</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#2574a9"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">print</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">sq</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_diagonal</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">())</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#2574a9"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">print</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">sq</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#2574a9"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">print</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">sq</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_picture</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">())</span></span></span></span></font></font></font></span></code>
+
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">rect</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">set_height</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">8</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">rect</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">set_width</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#9932cc"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">16</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#2574a9"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">print</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">rect</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">.</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">get_amount_inside</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">(</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">sq</span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#38425c"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">))</span></span></span></span></font></font></font></span></code></pre>
+    <p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Lato, sans-serif">
+                <font size="4" style="font-size: 13pt">That code should return:</font>
+            </font>
+        </font>
+    </p>
+    <pre class="western" style="border: none; padding: 0in; line-height: 150%; text-align: left; orphans: 2; widows: 2; background: #f5f2f0"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">50</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">26</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Rectangle(width=10, height=3)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">**********</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">**********</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">**********</span></span></span></span></font></font></font></span></code>
+
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">81</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">5.656854249492381</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">Square(side=4)</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">****</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">****</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">****</span></span></span></span></font></font></font></span></code>
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">****</span></span></span></span></font></font></font></span></code>
+
+<span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">8</span></span></span></span></font></font></font></span></code></pre>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">The
+unit tests for this project are in&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">test_module.py</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+    </p>
+    <h2 class="western" style="margin-top: 0in; margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Hack-ZeroSlash, monospace">
+                <font size="4" style="font-size: 13pt"><b>Development</b></font>
+            </font>
+        </font>
+    </h2>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Write
+your code in&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">shape_calculator.py</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+For development, you can use&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">main.py</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;to
+test your&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">shape_calculator()</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;function.
+Click the &quot;run&quot; button and&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">main.py</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;will
+run.</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+    </p>
+    <h2 class="western" style="margin-top: 0in; margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 110%; orphans: 2; widows: 2">
+        <font color="#1b1b32">
+            <font face="Hack-ZeroSlash, monospace">
+                <font size="4" style="font-size: 13pt"><b>Testing</b></font>
+            </font>
+        </font>
+    </h2>
+    <p style="margin-bottom: 0in; line-height: 150%; orphans: 2; widows: 2">
+        <span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">We
+imported the tests from&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">test_module.py</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;to&nbsp;</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#1b1b32"><font face="Hack-ZeroSlash, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">main.py</span></span>
+        </span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+        </code><span style="font-variant: normal"><font color="#1b1b32"><font face="Lato, sans-serif"><font size="4" style="font-size: 13pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;for
+your convenience. The tests will run automatically whenever you hit
+the &quot;run&quot; button.</span></span>
+        </span>
+        </font>
+        </font>
+        </font>
+        </span>
+    </p>
+    <p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+    </p>
+</body>
+
+</html>
